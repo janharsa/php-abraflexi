@@ -19,7 +19,7 @@ class Formats
  *
  * @var string
  */
- static public $version = '2020.2.5.3';
+ static public $version = '2020.3.0.2';
 
 
     /**
@@ -113,6 +113,14 @@ class Formats
     }
 
         /**
+     * Evidence doklad (#dokladView) Formats.
+     *
+     * @var array
+     */
+ static public $doklad = array (
+  'HTML' => 'html',
+);
+    /**
      * Evidence adresar (Adresy firem) Formats.
      *
      * @var array
@@ -122,6 +130,12 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
+  'vCard' => 'vcf',
 );
     /**
      * Evidence mzda (Aktualizace mezd) Formats.
@@ -177,6 +191,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence format-elektronickeho-bankovnictvi (Bankovní formáty) Formats.
@@ -188,6 +207,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence adresar-bankovni-ucet (Bankovní spojení) Formats.
@@ -199,6 +222,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence mzdy-bankovni-spojeni (Bankovní spojení) Formats.
@@ -210,6 +237,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence cenova-uroven (Cenové úrovně) Formats.
@@ -243,6 +274,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence cenikova-skupina (Ceníkové skupiny) Formats.
@@ -265,6 +301,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence intrastat-dodaci-podminky (Dodací podmínky) Formats.
@@ -276,6 +316,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence dodavatelska-smlouva (Dodavatelské smlouvy) Formats.
@@ -298,6 +342,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence rada-banka (Dokladové řady - bankovní doklady) Formats.
@@ -309,6 +357,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-interniho-dokladu (Dokladové řady - interní doklady) Formats.
@@ -320,6 +373,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-pohledavky (Dokladové řady - pohledávky) Formats.
@@ -331,6 +389,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-pokladni-pohyb (Dokladové řady - pokladní doklady) Formats.
@@ -342,6 +405,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-faktury-prijate (Dokladové řady - přijaté faktury) Formats.
@@ -353,6 +421,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-nabidky-prijate (Dokladové řady - přijaté nabídky) Formats.
@@ -364,6 +437,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-objednavky-prijate (Dokladové řady - přijaté objednávky) Formats.
@@ -375,6 +453,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-poptavky-prijate (Dokladové řady - přijaté poptávky) Formats.
@@ -386,6 +469,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-skladovy-pohyb (Dokladové řady - sklad) Formats.
@@ -397,6 +485,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-faktury-vydane (Dokladové řady - vydané faktury) Formats.
@@ -408,6 +501,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-nabidky-vydane (Dokladové řady - vydané nabídky) Formats.
@@ -419,6 +517,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-objednavky-vydane (Dokladové řady - vydané objednávky) Formats.
@@ -430,6 +533,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-poptavky-vydane (Dokladové řady - vydané poptávky) Formats.
@@ -441,6 +549,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence rada-zavazku (Dokladové řady - závazky) Formats.
@@ -452,6 +565,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence doklad-k-uhrade (Doklady k úhradě) Formats.
@@ -463,6 +581,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'PDF' => 'pdf',
+  'iCalendar' => 'ical',
 );
     /**
      * Evidence intrastat-druh-dopravy (Druh dopravy) Formats.
@@ -474,6 +596,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence dite (Dítě) Formats.
@@ -496,6 +622,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence eet-komunikace (EET komunikace) Formats.
@@ -504,9 +634,6 @@ class Formats
      */
  static public $eetKomunikace = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence cenik-obal (Evidence obalů EkoKom) Formats.
@@ -529,6 +656,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence forma-uhrady (Formy úhrady) Formats.
@@ -540,6 +671,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence osoba-hlavicka (Hlavičky osob) Formats.
@@ -559,9 +694,6 @@ class Formats
      */
  static public $hlavniKniha = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence individualni-cenik (Individuální ceník) Formats.
@@ -570,9 +702,6 @@ class Formats
      */
  static public $individualniCenik = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence insight (Insight) Formats.
@@ -595,6 +724,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence inventura (Inventury) Formats.
@@ -617,6 +751,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence kontakt (Kontakty) Formats.
@@ -628,6 +767,12 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
+  'vCard' => 'vcf',
 );
     /**
      * Evidence intrastat-kraj-urceni (Kraje určení) Formats.
@@ -639,6 +784,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence kurz (Kurzy) Formats.
@@ -650,6 +799,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence intrastat-kurz (Kurzy pro Intrastat) Formats.
@@ -694,6 +848,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence leasing (Leasing) Formats.
@@ -716,6 +874,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence mapovani-skladu (Mapování skladů) Formats.
@@ -760,6 +923,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence intrastat-merna-jednotka (Měrné jednotky) Formats.
@@ -771,6 +939,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence merna-jednotka (Měrné jednotky ) Formats.
@@ -782,6 +954,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence nastaveni (Nastavení) Formats.
@@ -793,6 +970,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence vazebni-doklad (Navázané doklady) Formats.
@@ -834,9 +1015,6 @@ class Formats
      */
  static public $cenikovyPohybProdej = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence cenikovy-pohyb-nakup (Nákupní, prodejní a skladové pohyby) Formats.
@@ -845,9 +1023,6 @@ class Formats
      */
  static public $cenikovyPohybNakup = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence intrastat-obchodni-transakce (Obchodní transakce) Formats.
@@ -859,6 +1034,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence strom-koren (Obecný strom) Formats.
@@ -870,6 +1049,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence obratova-predvaha (Obratová předvaha) Formats.
@@ -878,9 +1061,6 @@ class Formats
      */
  static public $obratovaPredvaha = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence obrat (Obraty) Formats.
@@ -892,6 +1072,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence smlouva (Odběratelské smlouvy) Formats.
@@ -914,6 +1098,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence uzivatel (Osoby a uživatelé) Formats.
@@ -936,6 +1125,12 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
+  'iCalendar' => 'ical',
 );
     /**
      * Evidence zavazek (Ostatní závazky) Formats.
@@ -958,6 +1153,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence penezni-ustav (Peněžní ústavy) Formats.
@@ -969,6 +1168,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence osoba (Personalistika) Formats.
@@ -988,9 +1192,6 @@ class Formats
      */
  static public $podkladyDph = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence podobne-zbozi (Podobné) Formats.
@@ -1010,9 +1211,6 @@ class Formats
      */
  static public $pohybNaUctech = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence pokladni-pohyb (Pokladna) Formats.
@@ -1024,6 +1222,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence parametr (Pokročilá parametrizace pomocí parametrů) Formats.
@@ -1068,6 +1271,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence inventura-polozka (Položky inventur) Formats.
@@ -1090,6 +1298,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence zavazek-polozka (Položky ostatních závazků) Formats.
@@ -1112,6 +1325,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence nabidka-prijata-polozka (Položky přijaté nabídky) Formats.
@@ -1145,6 +1363,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence poptavka-prijata-polozka (Položky přijatých poptávek) Formats.
@@ -1167,6 +1390,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence smlouva-polozka (Položky smluv) Formats.
@@ -1222,6 +1450,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence banka-polozka (Položky vzájemných zápočtů) Formats.
@@ -1233,6 +1466,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence poplatek (Poplatky) Formats.
@@ -1255,6 +1492,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence pracovni-pomer (Pracovní poměr) Formats.
@@ -1343,6 +1584,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence prehled-zamestnancu (Přehled zaměstnanců) Formats.
@@ -1365,6 +1611,12 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
+  'iCalendar' => 'ical',
 );
     /**
      * Evidence nabidka-prijata (Přijaté nabídky) Formats.
@@ -1409,6 +1661,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence prikaz-k-inkasu (Příkaz k inkasu) Formats.
@@ -1442,6 +1699,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence prislustenstvi (Příslušenství) Formats.
@@ -1475,6 +1736,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence sady-a-komplety (Sady) Formats.
@@ -1494,9 +1759,6 @@ class Formats
      */
  static public $saldo = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence sazba-dph (Sazby DPH) Formats.
@@ -1508,6 +1770,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence dashboard-sharing (Sdílení přehledů) Formats.
@@ -1530,6 +1797,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence pokladna (Seznam pokladen) Formats.
@@ -1541,6 +1813,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-prodejky (Seznam prodejních kas) Formats.
@@ -1552,6 +1829,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence sklad (Seznam skladů) Formats.
@@ -1563,6 +1844,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence preneseni-dph (Seznam zboží v režimu přenesení DPH) Formats.
@@ -1574,6 +1860,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence skladova-karta (Skladové karty) Formats.
@@ -1585,6 +1875,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence skupina-atributu (Skupiny atributů) Formats.
@@ -1607,6 +1901,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence skupina-osob (Skupiny osob) Formats.
@@ -1629,6 +1928,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence skupina-stitku (Skupiny štítků) Formats.
@@ -1659,9 +1963,6 @@ class Formats
      */
  static public $rozvahaPoUctech = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence dashboard-panel (Správa přehledů) Formats.
@@ -1673,6 +1974,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence srazka (Srážka) Formats.
@@ -1695,6 +2000,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence stav-skladu-k-datu (Stav skladu k datu) Formats.
@@ -1717,6 +2027,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence stav-smlouvy (Stavy smluv) Formats.
@@ -1739,6 +2054,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence stav-uctu (Stavy účtů) Formats.
@@ -1747,9 +2066,6 @@ class Formats
      */
  static public $stavUctu = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence stala-mzdova-slozka (Stálá mzdová složka) Formats.
@@ -1772,6 +2088,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence stredisko (Střediska) Formats.
@@ -1783,6 +2104,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence subjekt (Subjekt) Formats.
@@ -1805,6 +2131,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence typ-pracovniho-pomeru (Typ pracovního poměru) Formats.
@@ -1816,6 +2146,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence typ-atributu (Typy atributů) Formats.
@@ -1838,6 +2172,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence dodavatelsky-typ-smlouvy (Typy dodavatelských smluv) Formats.
@@ -1860,6 +2199,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-leasingu (Typy leasingů) Formats.
@@ -1871,6 +2215,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-majetku (Typy majetků) Formats.
@@ -1882,6 +2231,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-nakladu (Typy nákladů na události / aktivity) Formats.
@@ -1915,6 +2269,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-zavazku (Typy ostatních závazků) Formats.
@@ -1926,6 +2285,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-pokladni-pohyb (Typy pokladních dokladů) Formats.
@@ -1937,6 +2301,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-faktury-prijate (Typy přijatých faktur) Formats.
@@ -1948,6 +2317,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-nabidky-prijate (Typy přijatých nabídek) Formats.
@@ -1959,6 +2333,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-objednavky-prijate (Typy přijatých objednávek) Formats.
@@ -1970,6 +2349,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-poptavky-prijate (Typy přijatých poptávek) Formats.
@@ -1981,6 +2365,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-skladovy-pohyb (Typy skladových dokladů) Formats.
@@ -1992,6 +2381,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-aktivity (Typy událostí / aktivit) Formats.
@@ -2003,6 +2397,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence typ-uzivatelske-vazby (Typy uživatelských vazeb) Formats.
@@ -2025,6 +2423,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-nabidky-vydane (Typy vydaných nabídek) Formats.
@@ -2036,6 +2439,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-objednavky-vydane (Typy vydaných objednávek) Formats.
@@ -2047,6 +2455,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-poptavky-vydane (Typy vydaných poptávek) Formats.
@@ -2058,6 +2471,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence typ-zakazky (Typy zakázek) Formats.
@@ -2069,6 +2487,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence typ-vzajemnych-zapoctu (Typy zápočtů) Formats.
@@ -2080,6 +2502,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence majetek-udalost (Události) Formats.
@@ -2091,6 +2517,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence udalost (Události, aktivity) Formats.
@@ -2126,28 +2557,6 @@ class Formats
   'CSV' => 'csv',
 );
     /**
-     * Evidence umisteni-ve-skladu-regal (Umístění ve skladu) Formats.
-     *
-     * @var array
-     */
- static public $umisteniVeSkladuRegal = array (
-  'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
-);
-    /**
-     * Evidence umisteni-ve-skladu-mistnost (Umístění ve skladu) Formats.
-     *
-     * @var array
-     */
- static public $umisteniVeSkladuMistnost = array (
-  'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
-);
-    /**
      * Evidence umisteni-ve-skladu-police (Umístění ve skladu) Formats.
      *
      * @var array
@@ -2170,6 +2579,28 @@ class Formats
   'CSV' => 'csv',
 );
     /**
+     * Evidence umisteni-ve-skladu-regal (Umístění ve skladu) Formats.
+     *
+     * @var array
+     */
+ static public $umisteniVeSkladuRegal = array (
+  'HTML' => 'html',
+  'XML' => 'xml',
+  'JSON' => 'json',
+  'CSV' => 'csv',
+);
+    /**
+     * Evidence umisteni-ve-skladu-mistnost (Umístění ve skladu) Formats.
+     *
+     * @var array
+     */
+ static public $umisteniVeSkladuMistnost = array (
+  'HTML' => 'html',
+  'XML' => 'xml',
+  'JSON' => 'json',
+  'CSV' => 'csv',
+);
+    /**
      * Evidence sablona-upominky (Upomínky) Formats.
      *
      * @var array
@@ -2179,6 +2610,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence strom (Uzel stromu) Formats.
@@ -2190,6 +2625,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence uzivatelsky-dotaz (Uživatelské dotazy) Formats.
@@ -2197,6 +2636,21 @@ class Formats
      * @var array
      */
  static public $uzivatelskyDotaz = array (
+  'HTML' => 'html',
+  'XML' => 'xml',
+  'JSON' => 'json',
+  'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+);
+    /**
+     * Evidence sablona-mail (Uživatelské e-mailové šablony) Formats.
+     *
+     * @var array
+     */
+ static public $sablonaMail = array (
   'HTML' => 'html',
   'XML' => 'xml',
   'JSON' => 'json',
@@ -2267,6 +2721,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence uzivatelsky-dotaz-vlastnost (Vlastnosti) Formats.
@@ -2278,6 +2736,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence faktura-vydana (Vydané faktury) Formats.
@@ -2289,6 +2751,12 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
+  'iCalendar' => 'ical',
 );
     /**
      * Evidence nabidka-vydana (Vydané nabídky) Formats.
@@ -2352,9 +2820,6 @@ class Formats
      */
  static public $vykazHospodareni = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence vyrobni-cislo (Výrobní čísla) Formats.
@@ -2377,6 +2842,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence forma-uhrady-zauctovani (Zaúčtování formy úhrady) Formats.
@@ -2399,6 +2869,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence zapujcka (Zápůjčky) Formats.
@@ -2421,6 +2895,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence prodejka-platba (Úhrada) Formats.
@@ -2443,6 +2921,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence analyza-zakazky (Účetní analýza zakázky) Formats.
@@ -2451,9 +2933,6 @@ class Formats
      */
  static public $analyzaZakazky = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence ucetni-denik (Účetní deník) Formats.
@@ -2462,9 +2941,6 @@ class Formats
      */
  static public $ucetniDenik = array (
   'HTML' => 'html',
-  'XML' => 'xml',
-  'JSON' => 'json',
-  'CSV' => 'csv',
 );
     /**
      * Evidence ucetni-obdobi (Účetní období) Formats.
@@ -2476,6 +2952,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence ucet (Účtový rozvrh) Formats.
@@ -2487,6 +2968,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence cinnost (Činnost) Formats.
@@ -2509,6 +2995,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence typ-stavu-ceniku (Číselník stavů položek ceníku) Formats.
@@ -2520,6 +3010,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence stav-ceniku (Číselník stavů položek ceníku) Formats.
@@ -2553,6 +3047,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence cleneni-dph (Řádky přiznání DPH) Formats.
@@ -2564,6 +3062,11 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
+  'PDF' => 'pdf',
 );
     /**
      * Evidence stitek (Štítky) Formats.
@@ -2575,6 +3078,10 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
     /**
      * Evidence zurnal (Žurnál) Formats.
@@ -2586,5 +3093,9 @@ class Formats
   'XML' => 'xml',
   'JSON' => 'json',
   'CSV' => 'csv',
+  'DBF' => 'dbf',
+  'XLS' => 'xls',
+  'ISDOC' => 'isdoc',
+  'ISDOCx' => 'isdocx',
 );
 }
