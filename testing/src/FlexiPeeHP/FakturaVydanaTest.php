@@ -82,7 +82,7 @@ class FakturaVydanaTest extends RWTest
         $dataForInsert               = parent::getDataForInsert($code);
         $dataForInsert['typDokl']    = 'code:FAKTURA';
         $adresar                     = new \FlexiPeeHP\Adresar();
-        $candidates                  = $adresar->getColumnsFromFlexibee('id');
+        $candidates                  = $adresar->getColumnsFromAbraFlexi('id');
         $dataForInsert['firma']      = $candidates[array_rand($candidates)]['id'];
         $dataForInsert['sumZklZakl'] = \Ease\Functions::randomNumber(1000, 9999);
         $dataForInsert['varSym']     = $dataForInsert['kod']        = time();
@@ -144,7 +144,7 @@ class FakturaVydanaTest extends RWTest
             'sumZklCelkem' => $value
         ];
         $doklad->takeData($dataPohybu);
-        $doklad->insertToFlexiBee();
+        $doklad->insertToAbraFlexi();
         $doklad->unsetDataValue('kod');
         $this->object->sparujPlatbu($doklad);
         $this->assertEquals(201, $doklad->lastResponseCode,
@@ -212,7 +212,7 @@ class FakturaVydanaTest extends RWTest
                 $address->setDataValue('nazev', \Ease\Functions::randomString());
                 $address->setDataValue('poznam', 'Generated Unit Test Customer');
                 $address->setDataValue('typVztahuK', 'typVztahu.odberatel');
-                $address->insertToFlexiBee();
+                $address->insertToAbraFlexi();
                 $invoiceData['firma'] = $address;
             }
         }
@@ -261,7 +261,7 @@ class FakturaVydanaTest extends RWTest
         $invoice2->setDataValue('duzpUcto', $today);
         $invoice2->setDataValue('datUcto', $today);
         $invoice2->takeData($override);
-        $invoice2->insertToFlexiBee();
+        $invoice2->insertToAbraFlexi();
 
         return $invoice2;
     }
@@ -309,7 +309,7 @@ class FakturaVydanaTest extends RWTest
         $invoice2 = $this->invoiceCopy($this->object,
             ['typDokl' => 'code:FAKTURA']);
         $id       = (int) $invoice2->getLastInsertedId();
-        $invoice2->loadFromFlexiBee($id);
+        $invoice2->loadFromAbraFlexi($id);
         $kod      = $invoice2->getDataValue('kod');
         $invoice2->dataReset();
         $invoice2->setDataValue('id', 'code:'.$kod);

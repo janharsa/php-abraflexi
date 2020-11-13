@@ -75,7 +75,7 @@ class Changes extends RO {
      * @return int
      */
     public function getGlobalVersion() {
-        $this->getColumnsFromFlexibee('id', ['start' => 0, 'limit' => 0]);
+        $this->getColumnsFromAbraFlexi('id', ['start' => 0, 'limit' => 0]);
         return $this->globalVersion;
     }
 

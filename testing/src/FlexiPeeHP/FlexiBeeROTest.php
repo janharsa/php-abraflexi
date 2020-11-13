@@ -119,7 +119,7 @@ class ROTest extends \Test\Ease\SandTest {
         if (!is_null($this->object->evidence) && $this->object->evidence != 'test') {
 
 
-            $firstID = $this->object->getColumnsFromFlexibee(['id', 'kod'],
+            $firstID = $this->object->getColumnsFromAbraFlexi(['id', 'kod'],
                     ['limit' => 1]);
 
             if (count($firstID) && isset($firstID[0]['id'])) {
@@ -558,8 +558,8 @@ class ROTest extends \Test\Ease\SandTest {
      * @covers FlexiPeeHP\RO::loadFromFlexiBee
      */
     public function testLoadFromFlexiBee() {
-        $this->object->loadFromFlexiBee();
-        $this->object->loadFromFlexiBee(222);
+        $this->object->loadFromAbraFlexi();
+        $this->object->loadFromAbraFlexi(222);
     }
 
     /**
@@ -613,7 +613,7 @@ class ROTest extends \Test\Ease\SandTest {
             case 'evidence-list':
                 break;
             default:
-                $first = $this->object->getColumnsFromFlexibee(['id'],
+                $first = $this->object->getColumnsFromAbraFlexi(['id'],
                         ['limit' => 1], 'id');
                 if (empty($first)) {
                     $this->markTestSkipped('empty evidence ?');
@@ -700,9 +700,9 @@ class ROTest extends \Test\Ease\SandTest {
             case 'evidence-list':
                 break;
             default:
-                $this->object->getColumnsFromFlexibee(['id', 'kod'],
+                $this->object->getColumnsFromAbraFlexi(['id', 'kod'],
                         ['limit' => 1], 'id');
-                $this->object->getColumnsFromFlexibee('summary', ['limit' => 1],
+                $this->object->getColumnsFromAbraFlexi('summary', ['limit' => 1],
                         'id');
 
                 break;
@@ -1198,7 +1198,7 @@ class ROTest extends \Test\Ease\SandTest {
      * @covers FlexiPeeHP\RO::getFlexiBeeURL
      */
     public function testGetFlexiBeeURL() {
-        $this->object->getFlexiBeeURL();
+        $this->object->getAbraFlexiURL();
     }
 
     /**

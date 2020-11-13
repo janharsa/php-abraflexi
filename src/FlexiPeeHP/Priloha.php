@@ -194,7 +194,7 @@ class Priloha extends RW {
         $responseBackup = $object->lastCurlResponse;
         $object->postFields = $attachment;
         $object->defaultHttpHeaders['Content-Type'] = $contentType;
-        $url = $object->getFlexiBeeURL() . '/prilohy/new/' . $filename;
+        $url = $object->getAbraFlexiURL() . '/prilohy/new/' . $filename;
         $response = $object->performRequest($url, 'PUT');
         $object->defaultHttpHeaders = $headersBackup;
         $attached->setMyKey($response[0]['id']);
@@ -213,7 +213,7 @@ class Priloha extends RW {
      * @return array
      */
     public static function getAttachmentsList($object) {
-        $fburl = $object->getFlexiBeeURL();
+        $fburl = $object->getAbraFlexiURL();
         $attachments = [];
         $oFormat = $object->format;
         $object->setFormat('json');

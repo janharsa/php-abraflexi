@@ -109,7 +109,7 @@ class Stitek extends RW
         $pathToVsb      = array_flip(self::$vsbToEvidencePath);
 
         if (array_key_exists($evidenceBackup, $pathToVsb)) {
-            $labelsRaw = $object->getColumnsFromFlexiBee(['kod', 'nazev'],
+            $labelsRaw = $object->getColumnsFromAbraFlexi(['kod', 'nazev'],
                 [$pathToVsb[$evidenceBackup] => true], 'nazev');
             if (count($labelsRaw)) {
                 foreach ($labelsRaw as $labelInfo) {
@@ -134,7 +134,7 @@ class Stitek extends RW
      */
     public static function setLabel($label, $object)
     {
-        return $object->insertToFlexiBee(['id' => $object->getMyKey(), 'stitky' => $label]);
+        return $object->insertToAbraFlexi(['id' => $object->getMyKey(), 'stitky' => $label]);
     }
 
     /**
@@ -153,7 +153,7 @@ class Stitek extends RW
         $labels = self::getLabels($object);
         if (array_key_exists($label, $labels)) {
             unset($labels[$label]);
-            $object->insertToFlexiBee(['id' => $object->getMyKey(), 'stitky@removeAll' => 'true',
+            $object->insertToAbraFlexi(['id' => $object->getMyKey(), 'stitky@removeAll' => 'true',
                 'stitky' => $labels]);
             $result = ($object->lastResponseCode == 201);
         }

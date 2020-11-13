@@ -42,7 +42,7 @@ class RWTest extends ROTest {
                     $relatedEvidence = basename($structure['typDokl']['url']);
                     $loader = new \FlexiPeeHP\RO(null,
                             ['evidence' => $relatedEvidence]);
-                    $typDoklRaw = $loader->getColumnsFromFlexibee([
+                    $typDoklRaw = $loader->getColumnsFromAbraFlexi([
                         'kod'], ['limit' => 1]);
                     $dataForInsert['typDokl'] = \FlexiPeeHP\RO::code($typDoklRaw[0]['kod']);
                 }
@@ -93,7 +93,7 @@ class RWTest extends ROTest {
             }
 
             if (array_key_exists('storno', $actions)) {
-                $this->object->insertToFlexiBee($this->getDataForInsert('StornoTest_' . time()));
+                $this->object->insertToAbraFlexi($this->getDataForInsert('StornoTest_' . time()));
                 $this->object->performAction('storno', 'int');
             }
         }
@@ -196,9 +196,9 @@ class RWTest extends ROTest {
      * @covers FlexiPeeHP\RW::insertToFlexiBee
      */
     public function testInsertToFlexiBee() {
-        $this->object->insertToFlexiBee(['id' => 'ext:test:' . time()]);
+        $this->object->insertToAbraFlexi(['id' => 'ext:test:' . time()]);
         $this->object->setData(['id' => 'ext:test:' . time()], true);
-        $this->object->insertToFlexiBee();
+        $this->object->insertToAbraFlexi();
     }
 
     /**
@@ -373,7 +373,7 @@ class RWTest extends ROTest {
      * @covers FlexiPeeHP\RW::deleteFromFlexiBee
      */
     public function testDeleteFromFlexiBee() {
-        $this->object->deleteFromFlexiBee();
+        $this->object->deleteFromAbraFlexi();
     }
 
     /**

@@ -72,7 +72,7 @@ class Hooks extends RW
      */
     public function unregister($id)
     {
-        return $this->deleteFromFlexiBee($id);
+        return $this->deleteFromAbraFlexi($id);
     }
 
     /**

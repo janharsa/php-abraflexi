@@ -66,7 +66,7 @@ class Zurnal extends RO
         $evidence = $object->getEvidence();
         if (array_key_exists($evidence, self::$evidenceToDb)) {
             $dbTable = self::$evidenceToDb[$evidence];
-            $changes = $this->getColumnsFromFlexibee('*',
+            $changes = $this->getColumnsFromAbraFlexi('*',
                 ['tabulka' => $dbTable, 'idZaznamu' => $object->getMyKey()]);
 
             foreach ($changes as $change) {

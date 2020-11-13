@@ -32,14 +32,14 @@ class Report extends RW {
      *
      * @return int počet načtených položek
      */
-    public function loadFromFlexiBee($id = null) {
+    public function loadFromAbraFlexi($id = null) {
         if (strstr($id, 'code:')) { //Dirty Hack ⚠ Error 400: Entita 'Report' neobsahuje kód nebo ho nelze použít jako ID (není unikátní)
-            $candidates = $this->getColumnsFromFlexibee(['id', 'kod'], null, 'kod');
+            $candidates = $this->getColumnsFromAbraFlexi(['id', 'kod'], null, 'kod');
             if (array_key_exists(\FlexiPeeHP\RO::uncode($id), $candidates)) {
                 $id = intval($candidates[\FlexiPeeHP\RO::uncode($id)]['id']);
             }
         }
-        return parent::loadFromFlexiBee($id);
+        return parent::loadFromAbraFlexi($id);
     }
 
     /**

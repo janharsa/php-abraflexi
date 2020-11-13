@@ -61,7 +61,7 @@ class ChangesTest extends ROTest
         $address = new \FlexiPeeHP\Adresar();
         $address->setDataValue('nazev', \Ease\Functions::randomString());
         $address->setDataValue('poznam', 'Unit Test Random Record');
-        $address->insertToFlexiBee();
+        $address->insertToAbraFlexi();
 
         $flexidata = $this->object->getFlexiData();
 
@@ -75,7 +75,7 @@ class ChangesTest extends ROTest
             }
         }
 
-        $address->deleteFromFlexiBee();
+        $address->deleteFromAbraFlexi();
     }
 
     /**

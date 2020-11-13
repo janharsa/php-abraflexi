@@ -80,7 +80,7 @@ class BankaTest extends RWTest
         $dataForInsert               = parent::getDataForInsert($code);
         $loader                      = new \FlexiPeeHP\RO(null,
             ['evidence' => 'bankovni-ucet']);
-        $bankCodeRaw                 = $loader->getColumnsFromFlexibee([
+        $bankCodeRaw                 = $loader->getColumnsFromAbraFlexi([
             'kod'], ['limit' => 1]);
         $dataForInsert['banka']      = \FlexiPeeHP\RO::code($bankCodeRaw[0]['kod']);
         $dataForInsert['typPohybuK'] = 'typPohybu.prijem';

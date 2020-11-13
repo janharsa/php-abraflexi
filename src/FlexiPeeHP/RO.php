@@ -587,13 +587,13 @@ class RO extends \Ease\Sand {
      */
     public function processInit($init) {
         if (is_integer($init)) {
-            $this->loadFromFlexiBee($init);
+            $this->loadFromAbraFlexi($init);
         } elseif (is_array($init)) {
             $this->takeData($init);
         } elseif (preg_match('/\.(json|xml|csv)/', $init)) {
             $this->takeData($this->getFlexiData((($init[0] != '/') ? $this->evidenceUrlWithSuffix($init) : $init)));
         } else {
-            $this->loadFromFlexiBee($init);
+            $this->loadFromAbraFlexi($init);
         }
     }
 
@@ -1360,14 +1360,26 @@ class RO extends \Ease\Sand {
     }
 
     /**
-     * Načte záznam z FlexiBee a uloží v sobě jeho data
      * Read FlexiBee record and store it inside od object
-     *
+     * 
+     * @deprecated since version 2.0
+     * 
      * @param int|string $id ID or conditions
      *
      * @return int počet načtených položek
      */
     public function loadFromFlexiBee($id = null) {
+        return $this->loadFromAbraFlexi($id);
+    }
+
+    /**
+     * Read AbraFlexi record and store it inside od object
+     * 
+     * @param int|string $id ID or conditions
+     *
+     * @return int počet načtených položek
+     */
+    public function loadFromAbraFlexi($id = null) {
         $data = [];
         if (is_null($id)) {
             $id = $this->getMyKey();
@@ -1390,7 +1402,7 @@ class RO extends \Ease\Sand {
     public function reload() {
         $id = $this->getRecordIdent();
         $this->dataReset();
-        $this->loadFromFlexiBee($id);
+        $this->loadFromAbraFlexi($id);
         return $this->lastResponseCode == 200;
     }
 
@@ -1555,7 +1567,7 @@ class RO extends \Ease\Sand {
         $ignorestate = $this->ignore404();
         $this->ignore404(true);
         $keyColumn = $this->getKeyColumn();
-        $res = $this->getColumnsFromFlexibee([$keyColumn],
+        $res = $this->getColumnsFromAbraFlexi([$keyColumn],
                 is_array($data) ? $data : [$keyColumn => $data]);
 
         if (empty($res) || (isset($res['success']) && ($res['success'] == 'false')) || ((isset($res) && is_array($res)) && !isset($res[0]) )) {
@@ -1592,13 +1604,28 @@ class RO extends \Ease\Sand {
     /**
      * Vrací z FlexiBee sloupečky podle podmínek.
      *
+     * @deprecated since version 2.0
+     * 
      * @param string|string[] $columnsList seznam položek nebo úrověň detailu: id|summary|full
      * @param array           $conditions  pole podmínek nebo ID záznamu
      * @param string          $indexBy     Sloupeček podle kterého indexovat záznamy
      *
      * @return array
      */
-    public function getColumnsFromFlexibee($columnsList, $conditions = [],
+    public function getColumnsFromFlexiBee($columnsList, $conditions = [], $indexBy = null) {
+        return $this->getColumnsFromAbraFlexi($columnsList, $conditions, $indexBy);
+    }
+
+    /**
+     * Obtain AbraFlexi columns by conditions.
+     *
+     * @param string|string[] $columnsList seznam položek nebo úrověň detailu: id|summary|full
+     * @param array           $conditions  pole podmínek nebo ID záznamu
+     * @param string          $indexBy     Sloupeček podle kterého indexovat záznamy
+     *
+     * @return array
+     */
+    public function getColumnsFromAbraFlexi($columnsList, $conditions = [],
             $indexBy = null) {
         $detail = 'full';
         switch (gettype($columnsList)) {
@@ -1903,7 +1930,7 @@ class RO extends \Ease\Sand {
     public function getFirstRecordID() {
         $firstID = null;
         $keyColumn = $this->getKeyColumn();
-        $firstIdRaw = $this->getColumnsFromFlexibee([$keyColumn],
+        $firstIdRaw = $this->getColumnsFromAbraFlexi([$keyColumn],
                 ['limit' => 1, 'order' => $keyColumn], $keyColumn);
         if (!empty($firstIdRaw) && isset(current($firstIdRaw)[$keyColumn])) {
             $firstID = current($firstIdRaw)[$keyColumn];
@@ -1922,7 +1949,7 @@ class RO extends \Ease\Sand {
         $conditions['order'] = 'id@D';
         $conditions['limit'] = 1;
         $conditions[] = 'id gt ' . $this->getRecordID();
-        $next = $this->getColumnsFromFlexibee(['id'], $conditions);
+        $next = $this->getColumnsFromAbraFlexi(['id'], $conditions);
         return (is_array($next) && array_key_exists(0, $next) && array_key_exists('id',
                         $next[0])) ? intval($next[0]['id']) : null;
     }
@@ -1938,7 +1965,7 @@ class RO extends \Ease\Sand {
         $conditions['order'] = 'id@A';
         $conditions['limit'] = 1;
         $conditions[] = 'id lt ' . $this->getRecordID();
-        $prev = $this->getColumnsFromFlexibee(['id'], $conditions);
+        $prev = $this->getColumnsFromAbraFlexi(['id'], $conditions);
         return (is_array($prev) && array_key_exists(0, $prev) && array_key_exists('id',
                         $prev[0])) ? intval($prev[0]['id']) : null;
     }
@@ -2247,7 +2274,7 @@ class RO extends \Ease\Sand {
             $id = $this->getRecordID();
         }
         if (!empty($id)) {
-            $vazbyRaw = $this->getColumnsFromFlexibee(['vazby'],
+            $vazbyRaw = $this->getColumnsFromAbraFlexi(['vazby'],
                     ['relations' => 'vazby', 'id' => $id]);
             $vazby = array_key_exists('vazby', $vazbyRaw[0]) ? $vazbyRaw[0]['vazby'] : null;
         } else {
@@ -2257,11 +2284,22 @@ class RO extends \Ease\Sand {
     }
 
     /**
+     * Gives You URL for Current Record in AbraFlexi web interface
+     *
+     * @deprecated since version 2.0
+     * 
+     * @return string url
+     */
+    public function getFlexiBeeURL() {
+        return $this->getAbraFlexiURL();
+    }
+
+    /**
      * Gives You URL for Current Record in FlexiBee web interface
      *
      * @return string url
      */
-    public function getFlexiBeeURL() {
+    public function getAbraFlexiURL() {
         $parsed_url = parse_url(str_replace('.' . $this->format, '', $this->apiURL));
         $scheme = isset($parsed_url['scheme']) ? $parsed_url['scheme'] . '://' : '';
         $host = isset($parsed_url['host']) ? $parsed_url['host'] : '';
@@ -2660,9 +2698,8 @@ class RO extends \Ease\Sand {
      */
     public function logBanner($prefix = null, $suffix = null) {
         parent::logBanner($prefix,
-                ' FlexiBee ' . str_replace('://', '://' . $this->user . '@',
-                        $this->getApiUrl()) . ' FlexiBeeHP v' . self::$libVersion . ' (FlexiBee ' . EvidenceList::$version . ') EasePHP Framework v' . \Ease\Atom::$frameworkVersion . ' ' .
-                $suffix
+                ' ServerURI ' . str_replace('://', '://' . $this->user . '@',
+                        $this->getApiUrl()) . ' library v' . self::$libVersion . ' (FlexiBee ' . EvidenceList::$version . ') '.$suffix
         );
     }
 

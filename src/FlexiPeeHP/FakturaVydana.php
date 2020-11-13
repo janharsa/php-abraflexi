@@ -43,7 +43,7 @@ class FakturaVydana extends RW
         $sparovani                       = ['uhrazovanaFak' => $this];
         $sparovani['uhrazovanaFak@type'] = $this->evidence;
         $sparovani['zbytek']             = $zbytek;
-        $doklad->insertToFlexiBee(['id' => $doklad, 'sparovani' => $sparovani]);
+        $doklad->insertToAbraFlexi(['id' => $doklad, 'sparovani' => $sparovani]);
         return $doklad->lastResponseCode == 201;
     }
 
@@ -87,7 +87,7 @@ class FakturaVydana extends RW
         $uhrada['castka'] = $value;
 
         $this->setDataValue('hotovostni-uhrada', $uhrada);
-        $this->insertToFlexiBee();
+        $this->insertToAbraFlexi();
         return $this->lastResponseCode == 201;
     }
 
@@ -108,7 +108,7 @@ class FakturaVydana extends RW
         $odpocet['doklad'] = $invoice;
 
         $this->setDataValue('odpocty-zaloh', ['odpocet' => $odpocet]);
-        $this->insertToFlexiBee();
+        $this->insertToAbraFlexi();
         return $this->lastResponseCode == 201;
     }
 
@@ -141,7 +141,7 @@ class FakturaVydana extends RW
         $odpocet['doklad'] = $invoice;
 
         $this->setDataValue('odpocty-zaloh', ['odpocet' => $odpocet]);
-        $this->insertToFlexiBee();
+        $this->insertToAbraFlexi();
         return $this->lastResponseCode == 201;
     }
 
@@ -164,7 +164,7 @@ class FakturaVydana extends RW
                 'uhrada@type' => strtolower(end($classHelper))
             ]
         ];
-        $this->insertToFlexiBee($bondRequest);
+        $this->insertToAbraFlexi($bondRequest);
         return $this->lastResponseCode == 201;
     }
 
@@ -184,7 +184,7 @@ class FakturaVydana extends RW
             'zrus-vazbu-zdd'
         ];
 
-        $this->insertToFlexiBee($unbondRequest);
+        $this->insertToAbraFlexi($unbondRequest);
         return $this->lastResponseCode == 201;
     }
 

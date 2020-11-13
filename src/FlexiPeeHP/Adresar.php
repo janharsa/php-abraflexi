@@ -134,7 +134,7 @@ class Adresar extends RW
         if (is_null($address)) {
             $address = $this->getMyKey();
         }
-        $bucRaw = $this->getColumnsFromFlexibee(['buc', 'smerKod'], ['firma'=> $address ,'evidence' => 'adresar-bankovni-ucet']);
+        $bucRaw = $this->getColumnsFromAbraFlexi(['buc', 'smerKod'], ['firma'=> $address ,'evidence' => 'adresar-bankovni-ucet']);
         return (!empty($bucRaw) && array_key_exists(0, $bucRaw)) ? $bucRaw : [];
     }
     

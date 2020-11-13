@@ -76,7 +76,8 @@ class RW extends RO {
 
     /**
      * Save record (if evidence allow to).
-     * Uloží záznam (pokud to evidence dovoluje)
+     * 
+     * @deprecated since version 2.0
      *
      * @param array $data Data to save
      * @throws Exception Evidence does not support Import
@@ -84,6 +85,19 @@ class RW extends RO {
      * @return array odpověď
      */
     public function insertToFlexiBee($data = null) {
+        return $this->insertToAbraFlexi($data);
+    }
+
+    /**
+     * Save record (if evidence allow to).
+     *
+     * @param array $data Data to save
+     * 
+     * @throws Exception Evidence does not support Import
+     *
+     * @return array odpověď
+     */
+    public function insertToAbraFlexi($data = null) {
         if (is_null($data)) {
             $data = $this->getData();
         }
@@ -134,11 +148,11 @@ class RW extends RO {
 
             if (array_key_exists(0, $responseDecoded['results'])) {
                 foreach ($responseDecoded['results'] as $result) {
-                    
+
                     if (array_key_exists('request-id', $result)) {
                         unset($result['request-id']);
                     }
-                    
+
                     if (array_key_exists('errors', $result)) {
                         foreach ($result as $error) {
                             $this->errors[] = current($error);
@@ -228,14 +242,26 @@ class RW extends RO {
     }
 
     /**
-     * Smaže záznam
      * Delete record in FlexiBee
+     * 
+     * @deprecated since version 2.0
      *
      * @param int|string $id identifikátor záznamu
      * 
      * @return boolean Response code is 200 ?
      */
     public function deleteFromFlexiBee($id = null) {
+        return $this->deleteFromAbraFlexi($id);
+    }
+
+    /**
+     * Delete record in FlexiBee
+     *
+     * @param int|string $id identifikátor záznamu
+     * 
+     * @return boolean Response code is 200 ?
+     */
+    public function deleteFromAbraFlexi($id = null) {
         if (is_null($id)) {
             $id = $this->getMyKey();
         }
@@ -487,7 +513,7 @@ class RW extends RO {
      * @return boolean Operation success
      */
     public function sync($data = null) {
-        $this->insertToFlexiBee($data);
+        $this->insertToAbraFlexi($data);
         $insertResult = $this->lastResponseCode;
         if ($insertResult == 201) {
             $this->reload();
@@ -552,7 +578,7 @@ class RW extends RO {
             }
         } else {
             throw new \Exception(sprintf(_('Unsupported action %s for evidence %s'),
-                            $action, $this->getEvidence()));
+                                    $action, $this->getEvidence()));
         }
 
         return $result;
@@ -566,7 +592,7 @@ class RW extends RO {
      * @return array Insert result
      */
     public function addExternalID($extId) {
-        return $this->insertToFlexiBee(['id' => [$this->getRecordID(), 'ext:' . preg_replace('/^ext:/',
+        return $this->insertToAbraFlexi(['id' => [$this->getRecordID(), 'ext:' . preg_replace('/^ext:/',
                                 '', $extId)]]);
     }
 
@@ -583,7 +609,7 @@ class RW extends RO {
         $change['@removeExternalIds'] = 'ext:' . $selector . ':';
         $change['id'] = [is_null($forID) ? $this->getRecordID() : $forID,
             'ext:' . $selector . ':' . $newValue];
-        return $this->insertToFlexiBee($change);
+        return $this->insertToAbraFlexi($change);
     }
 
     /**

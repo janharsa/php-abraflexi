@@ -261,7 +261,7 @@ class Company extends RW
      * 
      * @return boolean Response code is 200 ?
      */
-    public function deleteFromFlexiBee($company = null)
+    public function deleteFromAbraFlexi($company = null)
     {
         if (is_null($company)) {
             $company = $this->getDataValue('dbNazev');

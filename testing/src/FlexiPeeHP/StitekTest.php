@@ -94,6 +94,6 @@ class StitekTest extends RWTest
         $this->assertTrue($this->object->createNew('Example Label',
                 ['faktura-vydana', 'faktura-prijata'], ['kod' => $testCode]));
 
-        $this->object->deleteFromFlexiBee($this->object->getRecordIdent()); //Cleanup
+        $this->object->deleteFromAbraFlexi($this->object->getRecordIdent()); //Cleanup
     }
 }

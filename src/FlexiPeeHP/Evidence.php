@@ -50,7 +50,7 @@ class Evidence extends Sand
      */
     public function getEvidenceData()
     {
-        return $this->engine->getColumnsFromFlexibee(array_key_exists('detail',
+        return $this->engine->getColumnsFromAbraFlexi(array_key_exists('detail',
                 $this->conditions) ? $this->conditions['detail'] : 'full', $this->conditions);
     }
 
@@ -62,7 +62,7 @@ class Evidence extends Sand
     public function getEvidenceObjects()
     {
         $contents = [];
-        foreach ($this->engine->getColumnsFromFlexibee(array_key_exists('detail',
+        foreach ($this->engine->getColumnsFromAbraFlexi(array_key_exists('detail',
                 $this->conditions) ? $this->conditions['detail'] : 'full',
             $this->conditions) as $pos => $recordData) {
             $contents[$pos] = clone $this->engine;
