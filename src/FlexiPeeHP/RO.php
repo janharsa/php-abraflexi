@@ -2522,7 +2522,7 @@ class RO extends \Ease\Sand {
         $reportsRaw = $this->getFlexiData($this->getEvidenceURL() . '/reports');
         if (!empty($reportsRaw) && array_key_exists('reports', $reportsRaw) && !empty($reportsRaw['reports']) && array_key_exists('report', $reportsRaw['reports']) &&
                 !empty($reportsRaw['reports']['report'])) {
-            if (\Ease\jQuery\Part::isAssoc($reportsRaw['reports']['report'])) {
+            if (\Ease\Functions::isAssoc($reportsRaw['reports']['report'])) {
                 $reports = [$reportsRaw['reports']['report']['reportId'] => $reportsRaw['reports']['report']];
             } else {
                 $reports = \Ease\Functions::reindexArrayBy($reportsRaw['reports']['report'],
@@ -2699,7 +2699,7 @@ class RO extends \Ease\Sand {
     public function logBanner($prefix = null, $suffix = null) {
         parent::logBanner($prefix,
                 ' ServerURI ' . str_replace('://', '://' . $this->user . '@',
-                        $this->getApiUrl()) . ' library v' . self::$libVersion . ' (FlexiBee ' . EvidenceList::$version . ') '.$suffix
+                        $this->getApiUrl()) . ' library v' . self::$libVersion . ' (FlexiBee ' . EvidenceList::$version . ') ' . $suffix
         );
     }
 
