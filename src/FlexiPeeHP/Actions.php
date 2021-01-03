@@ -3,7 +3,7 @@
  * FlexiPeeHP - Evidence Actions.
  *
  * @author     Vítězslav Dvořák <info@vitexsoftware.cz>
- * @copyright  (C) 2015-2020 Spoje.Net
+ * @copyright  (C) 2015-2021 Spoje.Net
  */
 
 namespace FlexiPeeHP;
@@ -21,7 +21,7 @@ class Actions
      *
      * @var string
      */
- static public $version = '2020.3.0.2';
+ static public $version = '2020.3.0.10';
 
     /**
      * Evidence doklad (#dokladView) Actions.

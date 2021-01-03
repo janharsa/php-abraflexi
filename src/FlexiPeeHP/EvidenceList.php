@@ -2,7 +2,7 @@
 /**
  * FlexiPeeHP - List of Evidencies.
  *
- * Generated: Thu, 12 Nov 2020 03:47:31 +0100 
+ * Generated: Mon, 04 Jan 2021 00:40:16 +0100 
  * From:      https://vitexsoftware.flexibee.eu:5434
  *    
  * @author     Vítězslav Dvořák <vitex@arachne.cz>
@@ -46,7 +46,7 @@ class EvidenceList extends FlexiBeeRO
      *
      * @var string
      */
- static public $version = '2020.3.0.2';
+ static public $version = '2020.3.0.10';
 
     /**
      * Evidences Path/Name listing.
@@ -1362,7 +1362,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'adrAdresar',
     'extIdSupported' => 'true',
     'dbName' => 'aAdresar',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'banka' => 
   array (
@@ -1398,7 +1398,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'banRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'BAN\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'BAN\'',
   ),
   'typ-banka' => 
   array (
@@ -1410,7 +1410,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'banTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'BAN\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'BAN\'',
   ),
   'bankovni-ucet' => 
   array (
@@ -1422,7 +1422,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'banBsp',
     'extIdSupported' => 'true',
     'dbName' => 'dBsp',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1 AND Modul = \'BAN\'',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1 AND Modul = \'BAN\'',
   ),
   'cenik' => 
   array (
@@ -1434,7 +1434,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cenAkt',
     'extIdSupported' => 'true',
     'dbName' => 'cCenik',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'cenova-uroven' => 
   array (
@@ -1446,7 +1446,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cenHlad',
     'extIdSupported' => 'true',
     'dbName' => 'cCenHlad',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'certifikat-eet' => 
   array (
@@ -1470,7 +1470,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisCinnost',
     'extIdSupported' => 'true',
     'dbName' => 'uCinnost',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'ciselnik-mzdovych-slozek' => 
   array (
@@ -1482,7 +1482,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'perCisMzdSloz',
     'extIdSupported' => 'false',
     'dbName' => 'pCisMzdSloz',
-    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2020-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2020-01-01\')',
+    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2021-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2021-01-01\')',
   ),
   'cleneni-dph' => 
   array (
@@ -1494,7 +1494,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisClenDph',
     'extIdSupported' => 'false',
     'dbName' => 'uClenDph',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdStatu IN (39)',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdStatu IN (39)',
   ),
   'cleneni-kontrolni-hlaseni' => 
   array (
@@ -1530,7 +1530,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'adrTypDodavSml',
     'extIdSupported' => 'true',
     'dbName' => 'dTypSml',
-    'evidenceFilter' => 'TypPohybuK = \'typPohybu.vydej\' AND (PlatiOd <= 2020 AND PlatiDo >= 2020)',
+    'evidenceFilter' => 'TypPohybuK = \'typPohybu.vydej\' AND (PlatiOd <= 2021 AND PlatiDo >= 2021)',
   ),
   'doklad-k-uhrade' => 
   array (
@@ -1578,7 +1578,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'fapRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'FAP\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'FAP\'',
   ),
   'typ-faktury-prijate' => 
   array (
@@ -1590,7 +1590,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'fapTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'FAP\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'FAP\'',
   ),
   'faktura-vydana' => 
   array (
@@ -1626,7 +1626,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'favRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'FAV\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'FAV\'',
   ),
   'typ-faktury-vydane' => 
   array (
@@ -1638,7 +1638,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'favTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'FAV\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'FAV\'',
   ),
   'format-elektronickeho-bankovnictvi' => 
   array (
@@ -1650,7 +1650,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisElBanFormaty',
     'extIdSupported' => 'false',
     'dbName' => 'dElbanFormat',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'forma-dopravy' => 
   array (
@@ -1662,7 +1662,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'formaDopravy',
     'extIdSupported' => 'false',
     'dbName' => 'dFormaDopravy',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'forma-uhrady' => 
   array (
@@ -1674,7 +1674,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'formaUhrCis',
     'extIdSupported' => 'false',
     'dbName' => 'dFormaUhradyCis',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'hodnoceni-zakazky' => 
   array (
@@ -1686,7 +1686,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisVyhZak',
     'extIdSupported' => 'false',
     'dbName' => 'uVyhZakazky',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'interni-doklad' => 
   array (
@@ -1722,7 +1722,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'INT\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'INT\'',
   ),
   'typ-interniho-dokladu' => 
   array (
@@ -1734,7 +1734,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'INT\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'INT\'',
   ),
   'intrastat-dodaci-podminky' => 
   array (
@@ -1746,7 +1746,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrDodPodm',
     'extIdSupported' => 'false',
     'dbName' => 'iDodPodm',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-druh-dopravy' => 
   array (
@@ -1758,7 +1758,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrDruhDopr',
     'extIdSupported' => 'false',
     'dbName' => 'iDruhDopr',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-kod-nomenklatury' => 
   array (
@@ -1770,7 +1770,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrNomenkla',
     'extIdSupported' => 'false',
     'dbName' => 'iNomen',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-kraj-urceni' => 
   array (
@@ -1782,7 +1782,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrKrajUrc',
     'extIdSupported' => 'false',
     'dbName' => 'iKrajUrc',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-kurz' => 
   array (
@@ -1806,7 +1806,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrMerJed',
     'extIdSupported' => 'false',
     'dbName' => 'iIntrMerJed',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-obchodni-transakce' => 
   array (
@@ -1818,7 +1818,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrObchTrans',
     'extIdSupported' => 'false',
     'dbName' => 'iObchTrans',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'intrastat-zvlastni-pohyb' => 
   array (
@@ -1830,7 +1830,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'intrZvlPoh',
     'extIdSupported' => 'false',
     'dbName' => 'iZvlPoh',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'konst-symbol' => 
   array (
@@ -1842,7 +1842,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisKonSym',
     'extIdSupported' => 'false',
     'dbName' => 'dKonSym',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'kurz' => 
   array (
@@ -1878,7 +1878,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majLeasing',
     'extIdSupported' => 'true',
     'dbName' => 'mLeasing',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'typ-leasingu' => 
   array (
@@ -1890,7 +1890,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majTypLeas',
     'extIdSupported' => 'true',
     'dbName' => 'mTypLeas',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1',
   ),
   'majetek' => 
   array (
@@ -1902,7 +1902,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majMajetek',
     'extIdSupported' => 'true',
     'dbName' => 'mMajetek',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'typ-majetku' => 
   array (
@@ -1914,7 +1914,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majTypMaj',
     'extIdSupported' => 'true',
     'dbName' => 'mTypMaj',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1',
   ),
   'mena' => 
   array (
@@ -1926,7 +1926,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisMeny',
     'extIdSupported' => 'false',
     'dbName' => 'uMeny',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'merna-jednotka' => 
   array (
@@ -1938,7 +1938,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisMj',
     'extIdSupported' => 'true',
     'dbName' => 'cMerJed',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'nabidka-prijata' => 
   array (
@@ -1974,7 +1974,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodNapRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'NAP\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'NAP\'',
   ),
   'typ-nabidky-prijate' => 
   array (
@@ -1986,7 +1986,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodNapTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'NAP\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'NAP\'',
   ),
   'nabidka-vydana' => 
   array (
@@ -2022,7 +2022,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodNavRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'NAV\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'NAV\'',
   ),
   'typ-nabidky-vydane' => 
   array (
@@ -2034,7 +2034,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodNavTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'NAV\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'NAV\'',
   ),
   'objednavka-prijata' => 
   array (
@@ -2070,7 +2070,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodObpRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'OBP\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'OBP\'',
   ),
   'typ-objednavky-prijate' => 
   array (
@@ -2082,7 +2082,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodObpTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'OBP\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'OBP\'',
   ),
   'objednavka-vydana' => 
   array (
@@ -2118,7 +2118,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodObvRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'OBV\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'OBV\'',
   ),
   'typ-objednavky-vydane' => 
   array (
@@ -2130,7 +2130,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodObvTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'OBV\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'OBV\'',
   ),
   'odpisova-skupina' => 
   array (
@@ -2142,7 +2142,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majSazby',
     'extIdSupported' => 'false',
     'dbName' => 'mSazby',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'penezni-ustav' => 
   array (
@@ -2154,7 +2154,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisSmerKod',
     'extIdSupported' => 'false',
     'dbName' => 'aSmerKod',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'pohledavka' => 
   array (
@@ -2190,7 +2190,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'phlRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'PHL\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'PHL\'',
   ),
   'typ-pohledavky' => 
   array (
@@ -2202,7 +2202,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'phlTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'PHL\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'PHL\'',
   ),
   'pokladna' => 
   array (
@@ -2214,7 +2214,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'pokBsp',
     'extIdSupported' => 'true',
     'dbName' => 'dBsp',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1 AND Modul = \'POK\'',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1 AND Modul = \'POK\'',
   ),
   'pokladni-pohyb' => 
   array (
@@ -2250,7 +2250,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'pokRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'POK\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'POK\'',
   ),
   'typ-pokladni-pohyb' => 
   array (
@@ -2262,7 +2262,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'pokTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'POK\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'POK\'',
   ),
   'poptavka-prijata' => 
   array (
@@ -2298,7 +2298,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodPppRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'PPP\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'PPP\'',
   ),
   'typ-poptavky-prijate' => 
   array (
@@ -2310,7 +2310,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodPppTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'PPP\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'PPP\'',
   ),
   'poptavka-vydana' => 
   array (
@@ -2346,7 +2346,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodPpvRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'PPV\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'PPV\'',
   ),
   'typ-poptavky-vydane' => 
   array (
@@ -2358,7 +2358,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'obchodPpvTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'PPV\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'PPV\'',
   ),
   'prace' => 
   array (
@@ -2382,7 +2382,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisTypUcOp',
     'extIdSupported' => 'true',
     'dbName' => 'uTypUcOp',
-    'evidenceFilter' => '(IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))',
+    'evidenceFilter' => '(IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))',
   ),
   'preneseni-dph' => 
   array (
@@ -2394,7 +2394,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisDphPren',
     'extIdSupported' => 'false',
     'dbName' => 'uDphPren',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'prikaz-k-inkasu' => 
   array (
@@ -2442,7 +2442,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'favTypProdejky',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = true AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'FAV\'',
+    'evidenceFilter' => 'Prodejka = true AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'FAV\'',
   ),
   'rada' => 
   array (
@@ -2454,7 +2454,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'radaBezModulu',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'setting-store' => 
   array (
@@ -2478,7 +2478,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'sklBsp',
     'extIdSupported' => 'true',
     'dbName' => 'dBsp',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1 AND Modul = \'SKL\'',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1 AND Modul = \'SKL\'',
   ),
   'skladovy-pohyb' => 
   array (
@@ -2514,7 +2514,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'sklRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'SKL\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'SKL\'',
   ),
   'typ-skladovy-pohyb' => 
   array (
@@ -2526,7 +2526,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'sklTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'SKL\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'SKL\'',
   ),
   'skupina-atributu' => 
   array (
@@ -2550,7 +2550,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'adrSkupFir',
     'extIdSupported' => 'true',
     'dbName' => 'aSkupFir',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1',
   ),
   'skupina-osob' => 
   array (
@@ -2562,7 +2562,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'perSkupOsob',
     'extIdSupported' => 'true',
     'dbName' => 'pSkupOsob',
-    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2020-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2020-01-01\')',
+    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2021-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2021-01-01\')',
   ),
   'skupina-stitku' => 
   array (
@@ -2574,7 +2574,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisSkupVybKlic',
     'extIdSupported' => 'true',
     'dbName' => 'wSkupVybKlic',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'skupina-zbozi' => 
   array (
@@ -2586,7 +2586,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cenSku',
     'extIdSupported' => 'true',
     'dbName' => 'cSkupZboz',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1',
   ),
   'smlouva' => 
   array (
@@ -2610,7 +2610,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisStaty',
     'extIdSupported' => 'false',
     'dbName' => 'aStaty',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'stav-smlouvy' => 
   array (
@@ -2622,7 +2622,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'adrStavSml',
     'extIdSupported' => 'true',
     'dbName' => 'dStavSml',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'stitek' => 
   array (
@@ -2634,7 +2634,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisVybKlice',
     'extIdSupported' => 'true',
     'dbName' => 'wVybKlice',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'stredisko' => 
   array (
@@ -2646,7 +2646,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisStr',
     'extIdSupported' => 'true',
     'dbName' => 'uStrediska',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'strom-koren' => 
   array (
@@ -2658,7 +2658,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'strom',
     'extIdSupported' => 'false',
     'dbName' => 'wStrom',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'typ-atributu' => 
   array (
@@ -2682,7 +2682,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'ucTypOrg',
     'extIdSupported' => 'false',
     'dbName' => 'uTypOrg',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'typ-pracovniho-pomeru' => 
   array (
@@ -2694,7 +2694,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'perTypPracPom',
     'extIdSupported' => 'false',
     'dbName' => 'pTypPracPom',
-    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2020-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2020-01-01\')',
+    'evidenceFilter' => '(PlatiOd IS NULL OR PlatiOd <= \'2021-12-31\') AND (PlatiDo IS NULL OR PlatiDo >= \'2021-01-01\')',
   ),
   'typ-smlouvy' => 
   array (
@@ -2706,7 +2706,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'adrTypSml',
     'extIdSupported' => 'true',
     'dbName' => 'dTypSml',
-    'evidenceFilter' => 'TypPohybuK = \'typPohybu.prijem\' AND (PlatiOd <= 2020 AND PlatiDo >= 2020)',
+    'evidenceFilter' => 'TypPohybuK = \'typPohybu.prijem\' AND (PlatiOd <= 2021 AND PlatiDo >= 2021)',
   ),
   'typ-zakazky' => 
   array (
@@ -2718,7 +2718,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisTypZak',
     'extIdSupported' => 'true',
     'dbName' => 'uTypZakazky',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'ucet' => 
   array (
@@ -2730,7 +2730,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'ucDoklUcty',
     'extIdSupported' => 'true',
     'dbName' => 'uUcty',
-    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND IdTypOrg = 1',
+    'evidenceFilter' => '((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND IdTypOrg = 1',
   ),
   'ucetni-osnova' => 
   array (
@@ -2742,7 +2742,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisUceRoz',
     'extIdSupported' => 'false',
     'dbName' => 'uStdUcty',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1',
   ),
   'umisteni' => 
   array (
@@ -2754,7 +2754,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'majUmisteni',
     'extIdSupported' => 'true',
     'dbName' => 'mUmisteni',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'umisteni-ve-skladu-mistnost' => 
   array (
@@ -2802,7 +2802,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'vazbaTyp',
     'extIdSupported' => 'true',
     'dbName' => 'wVazbaTyp',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'vzajemny-zapocet' => 
   array (
@@ -2826,7 +2826,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'banTypZapocty',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = true AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'BAN\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = true AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'BAN\'',
   ),
   'zakazka' => 
   array (
@@ -2838,7 +2838,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'cisZak',
     'extIdSupported' => 'true',
     'dbName' => 'uZakazky',
-    'evidenceFilter' => 'PlatiOd <= 2020 AND PlatiDo >= 2020',
+    'evidenceFilter' => 'PlatiOd <= 2021 AND PlatiDo >= 2021',
   ),
   'zavazek' => 
   array (
@@ -2874,7 +2874,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'zavRady',
     'extIdSupported' => 'false',
     'dbName' => 'dRady',
-    'evidenceFilter' => '(PlatiOd <= 2020 AND PlatiDo >= 2020) AND Modul = \'ZAV\'',
+    'evidenceFilter' => '(PlatiOd <= 2021 AND PlatiDo >= 2021) AND Modul = \'ZAV\'',
   ),
   'typ-zavazku' => 
   array (
@@ -2886,7 +2886,7 @@ class EvidenceList extends FlexiBeeRO
     'formCode' => 'zavTyp',
     'extIdSupported' => 'true',
     'dbName' => 'dTypDokl',
-    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3))) AND PlatiOd <= 2020 AND PlatiDo >= 2020) AND IdTypOrg = 1 AND Modul = \'ZAV\'',
+    'evidenceFilter' => 'Prodejka = false AND Zapocet = false AND (((IdUcetObdobiOd IS NULL OR IdUcetObdobiOd IN (87,1,2,3,4)) AND (IdUcetObdobiDo IS NULL OR IdUcetObdobiDo IN (134,133,132,131,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,115,114,113,112,111,110,109,108,107,106,105,104,103,102,101,100,99,98,97,96,95,94,93,92,91,90,89,88,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4))) AND PlatiOd <= 2021 AND PlatiDo >= 2021) AND IdTypOrg = 1 AND Modul = \'ZAV\'',
   ),
 );
 

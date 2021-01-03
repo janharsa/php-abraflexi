@@ -3,7 +3,7 @@
  * FlexiPeeHP - Evidence Formats.
  *
  * @author     Vítězslav Dvořák <info@vitexsoftware.cz>
- * @copyright  (C) 2015-2020 Spoje.Net
+ * @copyright  (C) 2015-2021 Spoje.Net
  */
 namespace FlexiPeeHP;
 
@@ -19,7 +19,7 @@ class Formats
  *
  * @var string
  */
- static public $version = '2020.3.0.2';
+ static public $version = '2020.3.0.10';
 
 
     /**
@@ -2066,6 +2066,9 @@ class Formats
      */
  static public $stavUctu = array (
   'HTML' => 'html',
+  'XML' => 'xml',
+  'JSON' => 'json',
+  'CSV' => 'csv',
 );
     /**
      * Evidence stala-mzdova-slozka (Stálá mzdová složka) Formats.
