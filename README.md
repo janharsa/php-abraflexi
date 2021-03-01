@@ -25,6 +25,8 @@ CZ: PHP Knihovna pro snadnou práci s českým ekonomickým systémem [FlexiBee]
 [![Daily Downloads](https://poser.pugx.org/spojenet/flexibee/d/daily)](https://packagist.org/packages/spojenet/flexibee)
 
  :exclamation: Tato knihovna byla z důvodu požadavků composeru 2.0+  přejmenována na **spojenet/flexibee**  :exclamation:
+ 
+ :exclamation: Věnujte prosím pozornost změnám v připravované nové verzi knihovny přinášející spoustu novinek: https://github.com/Spoje-NET/php-abraflexi/compare/2.0 :exclamation:
 
 
 # Poděkování 
