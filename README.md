@@ -1,5 +1,5 @@
-# FlexiBeeHP
-![FlexiBeeHP Logo](project-logo.png?raw=true "Project Logo")
+# PHP-AbraFlexi
+![PHP-AbraFlexi](project-logo.png?raw=true "Project Logo")
 
 PHP7.1+ Based Library for easy interaction with Czech accounting system FlexiBee.
 
