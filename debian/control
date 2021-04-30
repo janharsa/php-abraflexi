@@ -1,5 +1,5 @@
 Source: php-flexibee
-Build-Depends: debhelper (>= 7.0.50~), composer
+Build-Depends: debhelper (>= 7.0.50~), composer, jq, moreutils
 Standards-Version: 3.9.8
 Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
 Uploaders: Vitex <vitex@hippy.cz>
@@ -7,7 +7,7 @@ Priority: optional
 Homepage: https://github.com/Spoje-NET/php-flexibee
 
 Package: php-spojenet-flexibee
-Depends: ${misc:Depends}, php-curl,php-ease-core, composer
+Depends: ${misc:Depends}, php-curl,php-vitexsoftware-ease-core, composer
 Conflicts: flexipeehp
 Recommends: php-flexibee-config
 Suggests: flexibee-client,flexibee-contract-invoices,flexibee-dark-gui,flexibee-digest,flexibee-matcher,flexibee-reminder,flexibee-server,flexibee-server-backup,flexibee-tools,multi-flexibee-setup,php-vitexsoftware-ease-bootstrap4-widgets-flexibee,php-vitexsoftware-flexibee-bricks
