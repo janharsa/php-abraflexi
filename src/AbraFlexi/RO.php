@@ -626,7 +626,7 @@ class RO extends \Ease\Sand {
      *
      * @return bool Success
      */
-    public function setDataValue(string $columnName, $value) {
+    public function setDataValue($columnName, $value) {
         switch ($columnName) {
             case 'kod':
                 $value = self::uncode($value); //Alwyas uncode "kod" column
@@ -1064,7 +1064,7 @@ class RO extends \Ease\Sand {
             }
         } else {
             if ($this->throwException == true) {
-                throw new Exception('JSON Decoder: ' . $decodeError, $this);
+                throw new \Exception('JSON Decoder: ' . $decodeError, $this);
             } else {
                 $this->addStatusMessage('JSON Decoder: ' . $decodeError, 'error');
                 $this->addStatusMessage($rawJson, 'debug');
@@ -1144,7 +1144,7 @@ class RO extends \Ease\Sand {
                 $msg = (array_key_exists('message', $responseDecoded) ? $responseDecoded['message'] : $responseDecoded[key($responseDecoded)]['message']) . ' for ' . $this->getApiURL();
                 $this->addStatusMessage($msg, 'error');
                 if ($this->throwException) {
-                    throw new Exception($msg, $this);
+                    throw new \Exception($msg, $this);
                 }
                 break;
             case 404: // Page not found
@@ -1158,7 +1158,7 @@ class RO extends \Ease\Sand {
                 }
                 $this->addStatusMessage($this->lastResponseCode . ': ' . $this->curlInfo['url'] . ' (' . $this->format . ') ' . json_encode($this->getErrors()), 'warning');
                 if ($this->throwException) {
-                    throw new Exception('Problem', $this);
+                    throw new \Exception('Problem', $this);
                 }
                 break;
         }
@@ -1228,7 +1228,7 @@ class RO extends \Ease\Sand {
             $msg = sprintf('Curl Error (HTTP %d): %s', $this->lastResponseCode, $this->lastCurlError);
             $this->addStatusMessage($msg, 'error');
             if ($this->throwException) {
-                throw new Exception($msg, $this);
+                throw new \Exception($msg, $this);
             }
         }
 
@@ -2408,7 +2408,7 @@ class RO extends \Ease\Sand {
                 $msg = sprintf(_('Evidence %s does not support extIDs'), $this->getEvidence());
                 $this->addStatusMessage($msg, 'warning');
                 if ($this->throwException) {
-                    throw new Exception($msg, $this);
+                    throw new \Exception($msg, $this);
                 }
                 $res = false;
             } else {
